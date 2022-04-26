@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/styles.css">
+    <title>1</title>
+
+</head>
+
+<body>
+    <h1 id="myHeader">TO DO List</h1>
+
+    <input type="button" id="addButton" value="Add" onclick="addTask()" />
+    <input type="text" id="input" placeholder="enter task..." />
+
+    <hr>
+
+    <ul id="tasks">
+
+        <li>
+
+            <input type="button" class="done" onclick="markDone(this.parentNode)" value="&#x2713;" />
+
+            <input type="button" class="remove" onclick="remove(this.parentNode)" value="&#x2715;" />
+
+            make todo list
+
+        </li>
+
+    </ul>
+
+    <hr>
+
+    <!-- STEPs 8 and 9 below here  -->
+
+    <div id="divabout" class="aboutcolor">
+
+    </div>
+
+    <input type="button" value="About" onclick="doAbout()" />
+
+    <input type="button" value="Clear" onclick="clearAbout()" />
+
+    <!-- STEP 13 below here  -->
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
